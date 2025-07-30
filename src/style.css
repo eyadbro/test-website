@@ -1,6 +1,6 @@
 body {
     background-color: blueviolet;
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     height: 100vh ;
@@ -26,10 +26,5 @@ body {
     
 }
 .center  {
-    
     justify-content: center;
-    
-
-    
-    
 }

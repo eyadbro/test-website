@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "export game",
+			"path": "../../Documents/export game"
+		},
+		{
+			"name": "vite-app",
+			"path": ".."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "vite-app"
+	}
+}

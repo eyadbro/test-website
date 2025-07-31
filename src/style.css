@@ -28,3 +28,31 @@ body {
 .center  {
     justify-content: center;
 }
+/* 
+hello
+*/
+#mobile-controls {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+  display: flex;
+  gap: 20px;
+}
+
+.arrow-btn {
+  width: 70px;
+  height: 70px;
+  font-size: 28px;
+  border: none;
+  border-radius: 50%;
+  background-color: #444;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background-color 0.2s;
+}
+
+.arrow-btn:active {
+  background-color: #666;
+}

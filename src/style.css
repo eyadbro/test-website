@@ -11,6 +11,8 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
+    width: 500px;
+    height: 500px;
 }
 .linka a {
     display: flex;
@@ -55,4 +57,16 @@ hello
 
 .arrow-btn:active {
   background-color: #666;
+  
+}
+.fullscreen1 {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.widther {
+    width: 500px;
+  height: 500px;
 }

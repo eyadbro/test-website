@@ -15,41 +15,27 @@
   <div class="rectangle">
   </div>
   <div class="widther">
-    <iframe  class="hihi" id="game-frame" src="index2.html" width="500" height="500"></iframe>
+    <iframe  class="hihi" id="game-frame" src="index2.html"  allowfullscreen></iframe>
 </div>
   <div class="rectangle"></div>
   </div>
- </div>
- <div id="mobile-controls">
-  <button class="arrow-btn" id="leftBtn">←</button>
-  <button class="arrow-btn" id="rightBtn">→</button>
+  <div>
+  <button  class="fullscreen1" onclick="makeFullscreen()">Fullscreen</button>
 </div>
-
-  <script>
-  function simulateKeyPress(key) {
-    const iframe = document.getElementById('game-frame');
-    if (iframe && iframe.contentWindow) {
-      iframe.contentWindow.postMessage({ type: 'simulateKey', key }, '*');
+<script>
+    function makeFullscreen() {
+      const iframe = document.getElementById("game-frame");
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+      } else {
+        alert("Fullscreen not supported");
+      }
     }
-  }
-
-  document.getElementById('leftBtn').addEventListener('touchstart', () => simulateKeyPress('ArrowLeft'));
-  document.getElementById('rightBtn').addEventListener('touchstart', () => simulateKeyPress('ArrowRight'));
-  </script>
-
-
+</script>
 
 </body>
 </html> 
-
-
-
-
-
-
-
-
-
-
-
-

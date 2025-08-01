@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>!TEST!</title>
+  <meta name="description" content="Eyad's store to make websites – templates, tools, and services to help you build your own site easily and fast.">
+  <meta name="google-site-verification" content="OJHfU3OYr-PJdrFzqRfuTYxijW-cXWfiFcmLRc4w7yw" />
+
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .rectangle {
+      height: 20px;
+    }
+
+    .widther {
+      max-width: 100%;
+    }
+
+    iframe.hihi {
+      width: 100%;
+      height: 90vh;
+      border: none;
+    }
+
+    .fullscreen1 {
+      position: fixed;
+      bottom: 15px;
+      right: 15px;
+      padding: 10px 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      z-index: 9999;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="center">
+    <div class="rectangle"></div>
+
+    <div class="widther">
+      <iframe class="hihi" id="game-frame" src="index2.html" allowfullscreen></iframe>
+    </div>
+
+    <div class="rectangle"></div>
+  </div>
+
+  <button class="fullscreen1" onclick="makeFullscreen()">Fullscreen</button>
+
+  <script>
+    function makeFullscreen() {
+      const iframe = document.getElementById("game-frame");
+      if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+      } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+      } else if (iframe.msRequestFullscreen) {
+        iframe.msRequestFullscreen();
+      } else {
+        alert("Fullscreen not supported in this browser.");
+      }
+    }
+  </script>
+
+</body>
+</html>
